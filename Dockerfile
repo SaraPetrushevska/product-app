@@ -3,5 +3,5 @@ FROM amazoncorretto:11.0.14
 #ENTRYPOINT ["java", "-jar", "/kiii-0.0.1-SNAPSHOT.jar"]
 VOLUME /tmp
 ARG JAR_FILE
-COPY ${JAR_FILE} kiii-0.0.1-SNAPSHOT.jar
+COPY ${JAR_FILE} /kiii-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java","-jar","/kiii-0.0.1-SNAPSHOT.jar"]
